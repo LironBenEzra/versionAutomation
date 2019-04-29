@@ -1,0 +1,41 @@
+{
+    "file_list":[
+        "AdServer",
+        "BanManPro",
+        "AmAPI",
+		"ASANewApi",
+        "CmsAPI"
+
+    ],
+    "ignore_files":[
+        "ConnectionStrings",
+        "ServiceModel",
+        "Web.config",
+        "SessionState"
+    ],
+    "sql_properties": {
+        "server_ip":"172.31.31.48",
+        "DB_name":"Adserver",
+        "user":"artiuser",
+        "password":"Tsnhb1"
+    },
+    "s3_properties":{
+        "bucket_name":"artimedia-versions",
+        "new_version_local_folder":"C:\\COPY\\Server",
+        "zip_name":"newVersion.zip"
+    },
+
+    "main_prop":{
+        "version_folder_path":"C:\\ArtiMedia\\bin",
+        "copy_from_folder":"C:\\COPY\\server",
+        "services_to_stop":"",
+        "process_to_stop":"filebeat.exe",
+        "log_path":"C:\\updateVersion.log",
+        "backup_bin":"C:\\UpdateVersion\\Backup"
+        
+    },
+    "tests_properties":{
+        "gnt_url":"http://staging1.advsnx.net/as/Service.svc/gnt?sk=walla",
+        "getad_url":"http://staging1.advsnx.net/asa/a.aspx?ZoneID=901&Task=Get&SiteID=73"
+    }
+}
